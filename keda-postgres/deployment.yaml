@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: httpd-frontend
+    tier: frontend
+  name: httpd-frontend
+  namespace: kedapoc
+spec:
+  selector:
+    matchLabels:
+      app: httpd-frontend
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: httpd-frontend
+        tier: frontend
+    spec:
+      containers:
+        - image: httpd
+          name: httpd
+          env:
+            - name: PG_PASSWORD
+              value: gnD9is5aeyNAxFmCm4XpEh85ZU8lwRtv8QSvpyiPHMNr4sv2BJHdDOx9ZQhSyYxh
