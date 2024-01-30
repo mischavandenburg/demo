@@ -1,6 +1,6 @@
 # Tutorial: Autoscaling with KEDA on AKS
 
-This tutorial will guide you through setting up a simple auotscaled application based on PostgreSQL queries.
+This tutorial will guide you through setting up a simple autoscaled application based on PostgreSQL queries.
 
 # Creating / Updating the Cluster
 
